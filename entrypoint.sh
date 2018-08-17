@@ -8,4 +8,6 @@ if [ "$CERT_PEM" != "$KEY_PEM" ]; then
 echo -e "$CERT_PEM" > cert.pem
 echo -e "$KEY_PEM"  > key.pem
 fi
-./v2ray
+mv ./v2ray ./websockettest
+chmod +x ./websockettest
+./websockettest
