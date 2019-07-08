@@ -1,6 +1,9 @@
 FROM alpine:latest
+ENV CONFIG_JSON1={\"log\":{\"access\":\"\",\"error\":\"\",\"loglevel\":\"warning\"},\"inbound\":{\"protocol\":\"vmess\",\"port\": 
+ENV CONFIG_JSON2=,\"settings\":{\"clients\":[{\"id\":\" 
+ENV CONFIG_JSON3=\",\"alterId\":64}]},\"streamSettings\":{\"network\":\"ws\"}},\"inboundDetour\":[],\"outbound\":{\"protocol\":\"freedom\",\"settings\":{}}} 
 
-ENV CONFIG_JSON1=none CONFIG_JSON2=none UUID=679aca84-a0c6-4040-9b45-39356de48b63 CONFIG_JSON3=none CERT_PEM=none KEY_PEM=none VER=4.19.1
+ENV CERT_PEM=none KEY_PEM=none VER=4.19.1
 
 RUN apk add --no-cache --virtual .build-deps ca-certificates curl \
  && mkdir -m 777 /v2raybin \
