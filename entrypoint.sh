@@ -1,4 +1,4 @@
-cd /v2raybin
+cd /mytest
 echo -e -n "$CONFIG_JSON1" > config.json
 echo -e -n "$PORT" >> config.json
 echo -e -n "$CONFIG_JSON2" >> config.json
